@@ -270,7 +270,9 @@ html, body {
   overflow-x: hidden;
   line-height: 1.4;
 }
-
+    body{
+      zoom:75%;
+    }
 /* Loader */
 #loader {
   position: fixed;
@@ -771,7 +773,13 @@ h1, h2, h3, .cat-pill, .btn-checkout, #cart-total, .highlight-spec {
   font-size: 0.85rem;
   margin: 15px 0;
 }
+@media (max-width: 1200px) {
 
+  #cat-bar {
+    display: flex;
+        flex-direction: column;
+  }
+}
 /* Media queries para móvil */
 @media (max-width: 600px) {
   .grid-productos { padding-top: 90px; }
@@ -780,6 +788,7 @@ h1, h2, h3, .cat-pill, .btn-checkout, #cart-total, .highlight-spec {
   #cat-bar {
     margin-top: 80px;
     padding: 10px 20px;
+    
   }
 }
 
