@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+   <link rel="icon" href="https://zeroinfierso.gieovannyfrias.com/Imagenes/Logo.webp" type="image/x-icon">
+  <!--  canonical web-->
+  <link rel="canonical" href="https://zeroinfierso.gieovannyfrias.com"/>
+
+  <title>404</title>
+  </head>
+  <body>
+<section class="page_404">
+  <div class="container">
+    <div class="error_box">
+      <h1 class="error_code">404</h1>
+      <h2 class="error_title">Página no encontrada</h2>
+      <p class="error_message">
+        Lo sentimos, Zeroinfierso que buscas no existe.  
+        ¡Pero tenemos miles de ropa esperándote!
+      </p>
+      <div class="error_actions">
+        <a href="/" class="btn_primary">Volver a la tienda</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+/*======================
+    404 page tienda moderna blanco/azul
+=======================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+:root {
+  --background-color: #000; /* Fondo blanco */
+    --primary-color: #4facfe;   /* Azul eléctrico */
+  --secondary-color: #00f2fe; /* Azul turquesa */
+  --accent-color: #8e2de2;    /* Violeta moderno */
+}
+  body{
+    zoom:75;
+  }
+.page_404 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: var(--background-color);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.error_box {
+  text-align: center;
+/*
+  max-width: 600px;
+  padding: 40px;
+  background: #f9f9f9;
+  border-radius: 12px;
+*/
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.error_code {
+  font-size: 120px;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin: 0;
+  animation: pulse 2s infinite;
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow:
+    0 0 5px #0ff,
+    0 0 10px #0ff,
+    0 0 20px #0ff,
+    0 0 40px #0ff,
+    0 0 80px #0ff;
+  animation: flicker 2s infinite alternate;
+}
+
+@keyframes flicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    opacity: 1;
+  }
+  20%, 24%, 55% {
+    opacity: 0.3;
+  }
+}
+
+.error_title {
+  font-size: 28px;
+  font-weight: 600;
+  margin: 10px 0;
+  color: #333;
+}
+
+.error_message {
+  font-size: 16px;
+  color: #555;
+  margin: 15px 0 30px;
+}
+
+.error_actions a {
+  text-decoration: none;
+  font-weight: 600;
+  padding: 12px 25px;
+  border-radius: 6px;
+  margin: 10px;
+  transition: all 0.3s ease;
+}
+
+/* Botón principal */
+.btn_primary {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: #fff;
+  border: none;
+  box-shadow: 0 4px 12px rgba(79,172,254,0.4);
+}
+
+.btn_primary:hover {
+  background: linear-gradient(135deg, var(--secondary-color), var(--accent-color));
+  transform: scale(1.08);
+  box-shadow: 0 6px 16px rgba(142,45,226,0.5);
+}
+
+/* Animación pulsante en colores modernos */
+@keyframes pulse {
+  0% { transform: scale(1); color: var(--primary-color); }
+  50% { transform: scale(1.15); color: var(--accent-color); }
+  100% { transform: scale(1); color: var(--primary-color); }
+}
+</style>
+  </body>
+</html>
