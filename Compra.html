@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+   <link rel="icon" href="https://zeroinfierso.gieovannyfrias.com/Imagenes/Logo.webp" type="image/x-icon">
+  <!--  canonical web-->
+  <link rel="canonical" href="https://zeroinfierso.gieovannyfrias.com"/>
+
+  <!-- Fuentes Editoriales Obligatorias -->
+  <link rel="preconnect" href="https://googleapis.com">
+  <link rel="preconnect" href="https://gstatic.com" crossorigin>
+  <link href="https://googleapis.com/css2?family=Cinzel:wght@400;500&family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+
+    <title>Compra Moda Vestimenta </title>
+  <!-- Título que verá Google -->
+     <meta name="title" content="Compra Moda Vestimenta"/>
+    <meta name="description" content="Compra con nosotros de de manera seguro de buena calidad de alta gama."/>
+    <meta name="robots" content="index"/>
+<meta name="robots" content="follow"/>
+<meta name="keywords" content="tienda, online, productos, tecnologia, ropa"/>
+    <!-- Open Graph -->
+<meta property="og:title" content="Compra Moda Vestimenta">
+<meta property="og:description" content="Compra con nosotros de de manera seguro de buena calidad de alta gama.">
+<meta property="og:image" content="https://zeroinfierso.gieovannyfrias.com/Imagenes/Logo.webp">
+<meta property="og:url" content="https://zeroinfierso.gieovannyfrias.com/Compra">
+<meta property="og:type" content="article">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Compra Moda Vestimenta">
+<meta name="twitter:description" content="Compra con nosotros de de manera seguro de buena calidad de alta gama.">
+<meta name="twitter:image" content="https://zeroinfierso.gieovannyfrias.com/Imagenes/Logo.webp">
+
+</head>
+<body>
+  <div id="content">
+  <!-- AQUÍ SE INYECTARÁ EL HEADER AUTOMÁTICAMENTE -->
+  <div id="header-premium-target"></div>
+  <!-- Inyección del Header -->
+  <div id="header-premium-target"></div>
+
+ <!-- Contenedor de Compra -->
+    <!-- Contenedor Principal de Compra -->
+  <main class="compra-layout-container">
+    
+    <!-- BLOQUE IZQUIERDO: GALERÍA VISUAL -->
+    <section class="galeria-producto-premium">
+      <!-- Imagen principal grande cambiante -->
+      <div class="visor-imagen-principal">
+        <img id="imagen-maestra" src="" alt="Vista Principal de la Pieza">
+      </div>
+      
+      <!-- Contenedor donde el JS meterá las 4 miniaturas táctiles -->
+      <div class="carrusel-miniaturas" id="contenedor-miniaturas"></div>
+    </section>
+
+    <!-- BLOQUE DERECHO: TEXTOS E INFORMACIÓN EDITORIAL -->
+    <section class="detalle-info-premium">
+      <!-- Etiqueta del producto (ej: Edición Limitada / Colección Vanguardia) -->
+      <span class="tag-disponibilidad" id="producto-tag"></span>
+      
+      <!-- Título de la pieza (ej: Cronógrafo Imperial / Audífonos Acoustic) -->
+      <h1 class="titulo-pieza-premium" id="producto-titulo"></h1>
+      
+      <!-- Código de referencia único -->
+      <p class="id-referencia" id="producto-ref"></p>
+      
+      <!-- Precio de la variante seleccionada -->
+      <p class="precio-pieza-premium" id="producto-precio"></p>
+
+      <!-- Selectores de Acabados / Colores -->
+      <div class="selector-seccion-luxe">
+        <h4>Variante Disponible</h4>
+        <!-- Contenedor donde el JS inyectará los botones de Oro Rosa o Platino Pulido -->
+        <div class="contenedor-variantes" id="producto-variantes"></div>
+      </div>
+
+      <!-- Botón Premium Extra con Enlace de Pago Cambiante -->
+      <a href="#" target="_blank" class="btn-checkout-maison" id="producto-enlace-pago">
+        <span class="texto-checkout">Proceder a la Adquisición</span>
+      </a>
+
+      <!-- Menús Desplegables de Especificaciones (Acordeón) -->
+      <div class="acordeon-contenedor-luxe">
+        
+        <!-- Acordeón 1: Descripción dinámica -->
+        <div class="acordeon-item-luxe">
+          <button class="acordeon-cabecera" onclick="toggleAcordeon(this)">
+            Descripción de Zeroinfierso <span class="simbolo">+</span>
+          </button>
+          <div class="acordeon-contenido">
+            <p id="producto-descripcion"></p>
+          </div>
+        </div>
+
+        <!-- Acordeón 2: Logística Fija -->
+        <div class="acordeon-item-luxe">
+          <button class="acordeon-cabecera" onclick="toggleAcordeon(this)">
+            Logística Privada & Envío <span class="simbolo">+</span>
+          </button>
+          <div class="acordeon-contenido">
+            <p>Cada pieza se traslada bajo protocolos estrictos de custodia blindada. Entrega prioritaria de cortesía en un plazo de 1 a 2 semanas hábiles dependiendo del producto acordado, presentado en su caja con certificado oficial de autenticidad.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+            <!-- AQUÍ SE INYECTARÁ EL FOOTER AUTOMÁTICAMENTE -->
+  <div id="footer-premium-target"></div>
+  </div>
+  <style>
+ /* ==========================================================================
+   SISTEMA DE DISEÑO LUXURY - DETALLE DE PRODUCTO Y ADQUISICIÓN
+   ========================================================================== */
+
+:root {
+  --bg-maison: #070708;               /* Negro profundo de exposición */
+  --superficie-bloque: #121214;       /* Negro grafito para contenedores */
+  --oro-ley: #d4af37;                 /* Dorado mate institucional */
+  --oro-brillo: #f5e6a5;              /* Dorado claro metalizado */
+  --blanco-marfil: #f5f5f7;           /* Blanco premium de lectura */
+  --gris-atenuado: #8e8e93;           /* Gris sutil para metadatos */
+  --borde-luxe: rgba(255, 255, 255, 0.04); /* Líneas divisorias finas */
+  --fuente-editorial: 'Cinzel', serif;
+  --fuente-sistema: 'Montserrat', sans-serif;
+}
+
+/* ==========================================
+   1. RESET Y COMPORTAMIENTO BASE
+   ========================================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-maison);
+  color: var(--blanco-marfil);
+  font-family: var(--fuente-sistema);
+  -webkit-font-smoothing: antialiased;
+  padding-top: 120px; /* Margen de seguridad para no chocar con el Header Fijo */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+        zoom:75%;
+
+}
+
+/* Contenedores para la inyección del script unificado */
+#header-premium-target, 
+#footer-premium-target { 
+  width: 100%; 
+}
+
+/* ==========================================
+   2. ARQUITECTURA DEL CONTENEDOR (Split)
+   ========================================== */
+.compra-layout-container {
+  max-width: 1500px;
+  margin: 40px auto 80px auto;
+  padding: 0 6%;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr; /* Columna de galería más ancha que la de textos */
+  gap: 80px;
+  align-items: start;
+}
+
+/* ==========================================
+   3. BLOQUE IZQUIERDO: GALERÍA VISUAL
+   ========================================== */
+.galeria-producto-premium {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: sticky;
+  top: 140px; /* Hace que la imagen te acompañe fijamente mientras lees los detalles */
+}
+
+.visor-imagen-principal {
+  width: 100%;
+  height: 600px;
+  background-color: var(--superficie-bloque);
+  border: 1px solid var(--borde-luxe);
+  overflow: hidden;
+  position: relative;
+}
+
+.visor-imagen-principal img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.95);
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.visor-imagen-principal:hover img {
+  transform: scale(1.04); /* Zoom inmersivo sutil de alta costura */
+}
+
+/* Muestrario de miniaturas inferiores */
+.carrusel-miniaturas {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.miniatura-item {
+  height: 100px;
+  background-color: var(--superficie-bloque);
+  border: 1px solid var(--borde-luxe);
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  transition: border-color 0.4s ease;
+}
+
+.miniatura-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.4) grayscale(20%);
+  transition: all 0.4s ease;
+}
+
+/* Estado activo de la miniatura seleccionada */
+.miniatura-item.activa {
+  border-color: var(--oro-ley);
+}
+
+.miniatura-item.activa img, 
+.miniatura-item:hover img {
+  filter: brightness(1) grayscale(0%);
+}
+
+/* ==========================================
+   4. BLOQUE DERECHO: TEXTO E INFORMACIÓN
+   ========================================== */
+.detalle-info-premium {
+  display: flex;
+  flex-direction: column;
+}
+
+.tag-disponibilidad {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--oro-ley);
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.titulo-pieza-premium {
+  font-family: var(--fuente-editorial);
+  font-size: 38px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 1.25;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.id-referencia {
+  font-size: 12px;
+  color: var(--gris-atenuado);
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.precio-pieza-premium {
+  font-size: 26px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin-bottom: 35px;
+  border-bottom: 1px solid var(--borde-luxe);
+  padding-bottom: 25px;
+}
+
+/* ==========================================
+   5. INTERFACES DE CONFIGURACIÓN (SELECTORES)
+   ========================================== */
+.selector-seccion-luxe {
+  margin-bottom: 40px;
+}
+
+.selector-seccion-luxe h4 {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--gris-atenuado);
+  margin-bottom: 15px;
+  font-weight: 400;
+}
+
+.contenedor-variantes {
+  display: flex;
+  gap: 15px;
+}
+
+.btn-variante-luxe {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: var(--blanco-marfil);
+  padding: 14px 28px;
+  font-size: 11px;
+  font-family: var(--fuente-sistema);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 1px;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-variante-luxe:hover, 
+.btn-variante-luxe.seleccionado {
+  border-color: var(--oro-ley);
+  color: #fff;
+}
+
+.btn-variante-luxe.seleccionado {
+  background-color: rgba(212, 175, 55, 0.04);
+  box-shadow: inset 0 0 10px rgba(212, 175, 55, 0.05);
+}
+
+/* ==========================================
+   6. BOTÓN BOTIQUE DE PAGO (CHECKOUT)
+   ========================================== */
+.btn-checkout-maison {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  background: transparent;
+  border: 1px solid var(--oro-ley);
+  padding: 22px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 50px;
+  cursor: pointer;
+  transition: border-color 0.4s;
+}
+
+.texto-checkout {
+  color: var(--oro-ley);
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  position: relative;
+  z-index: 2;
+  transition: color 0.4s;
+}
+
+.btn-checkout-maison::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, var(--oro-ley), var(--oro-brillo));
+  z-index: 1;
+  transition: transform 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.btn-checkout-maison:hover::before {
+  transform: translateX(100%);
+}
+
+.btn-checkout-maison:hover .texto-checkout {
+  color: var(--bg-maison);
+}
+
+/* ==========================================
+   7. MENÚS EDITORIALES COLAPSABLES (ACORDEÓN)
+   ========================================== */
+.acordeon-contenedor-luxe {
+  border-top: 1px solid var(--borde-luxe);
+}
+
+.acordeon-item-luxe {
+  border-bottom: 1px solid var(--borde-luxe);
+}
+
+.acordeon-cabecera {
+  width: 100%;
+  background: transparent;
+  border: none;
+  color: var(--blanco-marfil);
+  padding: 22px 0;
+  font-family: var(--fuente-sistema);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  outline: none;
+}
+
+.acordeon-cabecera span.simbolo {
+  font-size: 16px;
+  color: var(--oro-ley);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.acordeon-contenido {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.acordeon-contenido p {
+  font-size: 13px;
+  line-height: 1.8;
+  color: var(--gris-atenuado);
+  padding-bottom: 24px;
+  font-weight: 300;
+}
+
+/* ==========================================
+   8. ADAPTACIÓN RESPONSIVA (DISEÑO MÓVIL)
+   ========================================== */
+@media (max-width: 1200px) {
+  .compra-layout-container {
+    gap: 40px;
+  }
+  .titulo-pieza-premium {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 1024px) {
+  body {
+    padding-top: 90px; /* Reduce espacio superior en tabletas/móviles */
+  }
+  .compra-layout-container {
+    grid-template-columns: 1fr; /* Rompe la estructura lateral y la apila en 1 columna */
+    gap: 50px;
+    margin: 20px auto 60px auto;
+  }
+  .galeria-producto-premium {
+    position: static; /* Desactiva el efecto fijo para que no interrumpa el deslizamiento táctil */
+  }
+  .visor-imagen-principal {
+    height: 480px;
+  }
+}
+
+@media (max-width: 600px) {
+  .compra-layout-container {
+    padding: 0 5%;
+  }
+  .visor-imagen-principal {
+    height: 350px;
+  }
+  .carrusel-miniaturas {
+    gap: 10px;
+  }
+  .miniatura-item {
+    height: 75px;
+  }
+  .titulo-pieza-premium {
+    font-size: 26px;
+  }
+  .precio-pieza-premium {
+    font-size: 22px;
+    margin-bottom: 25px;
+  }
+  .contenedor-variantes {
+    flex-direction: column; /* Apila las variantes en vertical en pantallas muy pequeñas */
+    gap: 10px;
+  }
+  .btn-variante-luxe {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+  </style>
+      <script src="src/components/Header-Footer/Header-Footer-main.js" defer></script>
+
+  <script>
+/* ==========================================================================
+   MOTOR DE EXPOSICIÓN DE PIEZA ÚNICA Y VARIANTES DE ALTA GAMA
+   ========================================================================== */
+
+// Registro de la pieza exclusiva de la Maison
+const productoActual = {
+  titulo: "Playera de hombre",
+  referencia: "REF: LX-70094-MX",
+  tag: "Edición Limitada",
+  descripcion: "Ropa, calzado y accesorios (generalmente subdividido en Hombre, Mujer e Infantil).",
+  variantes: {
+    "Blanco": {
+      precio: 250.00,
+      enlacePago: "/No_disponible",
+      imagenes: [
+          "https://lh3.googleusercontent.com/d/1KFY6-oZoulbpMORo3YcnWok7M0-i4Rpa=w1000",
+          "https://lh3.googleusercontent.com/d/1FyJA6iaHZlBAzy7mm3bf3VJwiZXzzvVX=w1000",
+          "https://lh3.googleusercontent.com/d/1rT1Sz8YokDU7kl2LCdlizZMRxWrcrZGx=w1000",
+          "https://lh3.googleusercontent.com/d/1KdTnZ5FUh01g9wH4nPmoCab6p_x_Ypc3=w1000"
+      ]
+    },
+    "Negro": {
+      precio: 300.00,
+      enlacePago: "/No_disponible",
+            //enlacePago: "https://buy.stripe.com/00w8wQe38f6k67S2i5fUQ09",
+      imagenes: [
+        "https://lh3.googleusercontent.com/d/16AcO0Ij7YHadnX9OoMWa36AexvD7pDfI=w1000",
+        "https://unsplash.com",
+        "https://unsplash.com",
+        "https://unsplash.com"
+      ]
+    }
+  }
+};
+
+function cargarPiezaMaison() {
+  // Inyectar la narrativa fija del producto
+  if (document.getElementById('producto-tag')) document.getElementById('producto-tag').innerText = productoActual.tag;
+  if (document.getElementById('producto-titulo')) document.getElementById('producto-titulo').innerText = productoActual.titulo;
+  if (document.getElementById('producto-ref')) document.getElementById('producto-ref').innerText = productoActual.referencia;
+  if (document.getElementById('producto-descripcion')) document.getElementById('producto-descripcion').innerText = productoActual.descripcion;
+  
+  const contenedorVariantes = document.getElementById('producto-variantes');
+  if (contenedorVariantes) {
+    contenedorVariantes.innerHTML = '';
+    const nombresVariantes = Object.keys(productoActual.variantes);
+    
+    nombresVariantes.forEach((nombre, index) => {
+      const claseSeleccionada = index === 0 ? 'seleccionado' : '';
+      contenedorVariantes.innerHTML += `
+        <button class="btn-variante-luxe ${claseSeleccionada}" onclick="cambiarVariante(this, '${nombre}')">${nombre}</button>
+      `;
+    });
+
+    // Arrancar la pantalla con los datos de la primera opción ("Oro Rosa 18k")
+    actualizarDatosEspecificosVariante(nombresVariantes[0]);
+  }
+}
+
+function actualizarDatosEspecificosVariante(nombreVariante) {
+  const datosVariante = productoActual.variantes[nombreVariante];
+  if (!datosVariante) return;
+
+  // 1. Modificar precio
+  if (document.getElementById('producto-precio')) {
+    document.getElementById('producto-precio').innerText = `$${datosVariante.precio.toLocaleString('en-US', { minimumFractionDigits: 2 })}`;
+  }
+  
+  // 2. Modificar el enlace de la pasarela de pago
+  const botonCheckout = document.getElementById('producto-enlace-pago');
+  if (botonCheckout) botonCheckout.href = datosVariante.enlacePago;
+  
+  // 3. Modificar imagen principal
+  if (document.getElementById('imagen-maestra')) {
+    document.getElementById('imagen-maestra').src = datosVariante.imagenes[0];
+  }
+
+  // 4. Regenerar el carrusel de vistas secundarias
+  const contenedorMiniaturas = document.getElementById('contenedor-miniaturas');
+  if (contenedorMiniaturas) {
+    contenedorMiniaturas.innerHTML = '';
+    datosVariante.imagenes.forEach((urlImg, index) => {
+      const claseActiva = index === 0 ? 'activa' : '';
+      contenedorMiniaturas.innerHTML += `
+        <div class="miniatura-item ${claseActiva}" onclick="cambiarImagen(this, '${urlImg}')">
+          <img src="${urlImg}" alt="Ángulo ${index + 1}">
+        </div>
+      `;
+    });
+  }
+}
+
+function cambiarVariante(boton, nombreVariante) {
+  const hermanos = boton.parentElement.querySelectorAll('.btn-variante-luxe');
+  hermanos.forEach(btn => btn.classList.remove('seleccionado'));
+  boton.classList.add('seleccionado');
+
+  actualizarDatosEspecificosVariante(nombreVariante);
+}
+
+function cambiarImagen(elemento, urlNueva) {
+  const imagenMaestra = document.getElementById('imagen-maestra');
+  if (imagenMaestra) imagenMaestra.src = urlNueva;
+  
+  document.querySelectorAll('.miniatura-item').forEach(item => item.classList.remove('activa'));
+  elemento.classList.add('activa');
+}
+
+function toggleAcordeon(cabecera) {
+  const contenido = cabecera.nextElementSibling;
+  const simbolo = cabecera.querySelector('.simbolo');
+  
+  if (contenido.style.maxHeight && contenido.style.maxHeight !== "0px") {
+    contenido.style.maxHeight = "0px";
+    simbolo.textContent = "+";
+    simbolo.style.transform = "rotate(0deg)";
+  } else {
+    document.querySelectorAll('.acordeon-contenido').forEach(c => c.style.maxHeight = "0px");
+    document.querySelectorAll('.simbolo').forEach(s => { s.textContent = "+"; s.style.transform = "rotate(0deg)"; });
+
+    contenido.style.maxHeight = contenido.scrollHeight + "px";
+    simbolo.textContent = "−";
+    simbolo.style.transform = "rotate(180deg)";
+  }
+}
+
+// Iniciar carga tras el despliegue seguro de componentes estructurales
+window.addEventListener('load', cargarPiezaMaison);
+
+
+  </script>
+  </body>
+

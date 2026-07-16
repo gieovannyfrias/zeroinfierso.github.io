@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+   <link rel="icon" href="https://zeroinfierso.gieovannyfrias.com/Imagenes/Logo.webp" type="image/x-icon">
+  <!--  canonical web-->
+  <link rel="canonical" href="https://zeroinfierso.gieovannyfrias.com"/>
+
+    <title>Contacto</title>
+  <!-- Título que verá Google -->
+     <meta name="title" content="Estreno"/>
+    <meta name="description" content="Cualquier tipo de duda con tu producto envianos un mensaje ofical."/>
+    <meta name="robots" content="index"/>
+<meta name="robots" content="follow"/>
+<meta name="keywords" content="tienda, online, productos, tecnologia, ropa"/>
+    <!-- Open Graph -->
+<meta property="og:title" content="Contacto">
+<meta property="og:description" content="Cualquier tipo de duda con tu producto envianos un mensaje ofical.">
+<meta property="og:image" content="https://zeroinfierso.gieovannyfrias.com/Imagenes/Logo.webp">
+<meta property="og:url" content="https://zeroinfierso.gieovannyfrias.com/Contacto">
+<meta property="og:type" content="article">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Contacto">
+<meta name="twitter:description" content="Cualquier tipo de duda con tu producto envianos un mensaje ofical.">
+<meta name="twitter:image" content="https://zeroinfierso.gieovannyfrias.com/Imagenes/Logo.webp">
+
+</head>
+<body>
+  <div id="content">
+  <!-- AQUÍ SE INYECTARÁ EL HEADER AUTOMÁTICAMENTE -->
+  <div id="header-premium-target"></div>
+    <div class="home">
+  <section class="seccion-contacto">
+    <div class="contenedor-contacto">
+      
+      <!-- Bloque Izquierdo: Información de la Maison -->
+      <div class="info-contacto">
+        <span class="subtitulo-premium">Atención Exclusiva</span>
+        <h2 class="titulo-premium">Póngase en Contacto</h2>
+        <p class="descripcion-premium">Nuestro equipo de asesores privados está a su disposición para ofrecerle una experiencia a la medida.</p>
+        
+        <div class="detalles-lista">
+          <div class="detalle-item">
+            <div class="icono-oro">📍</div>
+            <div>
+              <h3>Dirección</h3>
+              <p>N.A</p>
+            </div>
+          </div>
+          <div class="detalle-item">
+            <div class="icono-oro">✉️</div>
+            <div>
+              <h3>Contacto oficial</h3>
+              <p>mytienda@gieovannyfrias.com</p>
+            </div>
+          </div>
+          <div class="detalle-item">
+            <div class="icono-oro">📞</div>
+            <div>
+              <h3>Línea Directa</h3>
+              <p>+52 55-51-57-01-60</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bloque Derecho: Formulario de Alta Gama -->
+      <div class="formulario-contacto">
+        <form id="form-premium" onsubmit="enviarMensaje(event)" action="https://formspree.io/f/meeyezvz" method="POST">
+          
+          <div class="grupo-input">
+            <input type="text" id="nombre" required placeholder=" ">
+            <label for="nombre">Nombre Completo</label>
+            <span class="linea-efecto"></span>
+          </div>
+
+          <div class="grupo-input">
+            <input type="email" id="email" required placeholder=" ">
+            <label for="email">Correo Electrónico</label>
+            <span class="linea-efecto"></span>
+          </div>
+
+          <div class="grupo-input">
+            <select id="motivo" required>
+              <option value="" disabled selected hidden></option>
+              <option value="adquisicion">Asesoría de Adquisición</option>
+              <option value="concierge">Servicio Concierge Privado</option>
+              <option value="Soporte">Soporte Tecnológico Premium</option>
+                            <option value="otro">Otro</option>
+            </select>
+            <label for="motivo">Motivo de Consulta</label>
+            <span class="linea-efecto"></span>
+          </div>
+
+          <div class="grupo-input">
+            <textarea id="mensaje" required placeholder=" " rows="4"></textarea>
+            <label for="mensaje">Detalles de su Solicitud</label>
+            <span class="linea-efecto"></span>
+          </div>
+
+          <button type="submit" class="btn-enviar-premium">
+            <span class="texto-btn">Enviar Solicitud</span>
+          </button>
+          
+        </form>
+        
+        <!-- Mensaje de éxito oculto por defecto -->
+        <div id="mensaje-exito" class="exito-oculto">
+          <div class="check-animado">✓</div>
+          <h3>Solicitud Recibida</h3>
+          <p>Un asesor se comunicará con usted de forma prioritaria.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+    </div>
+          <!-- AQUÍ SE INYECTARÁ EL FOOTER AUTOMÁTICAMENTE -->
+  <div id="footer-premium-target"></div>
+  </div>
+<style>
+  /* ==========================================
+   VARIABLES DE LUJO
+   ========================================== */
+:root {
+  --bg-oscuro: #09090b;          /* Negro minimalista profundo */
+  --bg-tarjeta: #141417;         /* Grafito de alta gama */
+  --oro: #d4af37;                /* Oro mate */
+  --oro-brillo: #f5e6a5;         /* Oro iluminado */
+  --texto-principal: #ffffff;
+  --texto-secundario: #9ca3af;
+  --borde-premium: rgba(212, 175, 55, 0.2);
+  --fuente-serif: 'Cinzel', 'Playfair Display', serif;
+  --fuente-sans: 'Montserrat', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+  body{
+          zoom:75%;
+
+  }
+.home {
+  background-color: var(--bg-oscuro);
+  color: var(--texto-principal);
+  font-family: var(--fuente-sans);
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ==========================================
+   CONTENEDOR ASIMÉTRICO
+   ========================================== */
+.seccion-contacto {
+  width: 100%;
+  padding: 60px 4%;
+  max-width: 1200px;
+}
+
+.contenedor-contacto {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  background-color: var(--bg-tarjeta);
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.8);
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Destello decorativo de fondo */
+.contenedor-contacto::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(212,175,55,0.05) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+/* ==========================================
+   BLOQUE IZQUIERDO (Información)
+   ========================================== */
+.info-contacto {
+  padding: 60px;
+  background: linear-gradient(135deg, rgba(20,20,23,1) 0%, rgba(10,10,12,1) 100%);
+  border-right: 1px solid rgba(255, 255, 255, 0.03);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.subtitulo-premium {
+  color: var(--oro);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  display: block;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.titulo-premium {
+  font-family: var(--fuente-serif);
+  font-size: 36px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.descripcion-premium {
+  color: var(--texto-secundario);
+  font-size: 14px;
+  line-height: 1.8;
+  margin-bottom: 40px;
+  font-weight: 300;
+}
+
+.detalles-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.detalle-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.icono-oro {
+  width: 45px;
+  height: 45px;
+  background: rgba(212, 175, 55, 0.08);
+  border: 1px solid var(--borde-premium);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 16px;
+}
+
+.detalle-item h3 {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--texto-secundario);
+  margin-bottom: 4px;
+}
+
+.detalle-item p {
+  font-size: 14px;
+  color: var(--texto-principal);
+  font-weight: 300;
+}
+
+/* ==========================================
+   BLOQUE DERECHO (Formulario)
+   ========================================== */
+.formulario-contacto {
+  padding: 60px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+#form-premium {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 35px; /* Espaciado amplio de estilo editorial */
+}
+
+/* Inputs Premium Flotantes */
+.grupo-input {
+  position: relative;
+  width: 100%;
+}
+
+.grupo-input input,
+.grupo-input textarea,
+.grupo-input select {
+  width: 100%;
+  padding: 10px 0;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  color: var(--texto-principal);
+  font-size: 15px;
+  font-family: var(--fuente-sans);
+  outline: none;
+  transition: border-color 0.4s;
+}
+
+/* Corregir estilos del select en modo oscuro */
+.grupo-input select option {
+  background-color: var(--bg-tarjeta);
+  color: var(--texto-principal);
+}
+
+.grupo-input label {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  color: var(--texto-secundario);
+  font-size: 14px;
+  pointer-events: none;
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  letter-spacing: 1px;
+}
+
+/* Animación cuando el input tiene foco o texto */
+.grupo-input input:focus ~ label,
+.grupo-input input:not(:placeholder-shown) ~ label,
+.grupo-input textarea:focus ~ label,
+.grupo-input textarea:not(:placeholder-shown) ~ label,
+.grupo-input select:focus ~ label,
+.grupo-input select:valid ~ label {
+  top: -18px;
+  font-size: 11px;
+  color: var(--oro);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* Línea de expansión dorada interactiva */
+.linea-efecto {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: var(--oro);
+  transition: width 0.4s ease;
+}
+
+.grupo-input input:focus ~ .linea-efecto,
+.grupo-input textarea:focus ~ .linea-efecto,
+.grupo-input select:focus ~ .linea-efecto {
+  width: 100%;
+}
+
+/* ==========================================
+   BOTÓN CON RELLENO INTERNO LUXURY
+   ========================================== */
+.btn-enviar-premium {
+  background: transparent;
+  border: 1px solid var(--oro);
+  padding: 16px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.4s;
+  margin-top: 10px;
+}
+
+.texto-btn {
+  color: var(--oro);
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  position: relative;
+  z-index: 2;
+  transition: color 0.4s;
+}
+
+.btn-enviar-premium::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, var(--oro), var(--oro-brillo));
+  z-index: 1;
+  transition: transform 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.btn-enviar-premium:hover::before {
+  transform: translateX(100%);
+}
+
+.btn-enviar-premium:hover .texto-btn {
+  color: var(--bg-oscuro);
+}
+
+/* ==========================================
+   ESTADO DE ÉXITO (Ocultación y Animación)
+   ========================================== */
+.exito-oculto {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-tarjeta);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+  padding: 40px;
+  text-align: center;
+}
+
+.exito-visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.check-animado {
+  width: 60px;
+  height: 60px;
+  border: 2px solid var(--oro);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  color: var(--oro);
+  margin-bottom: 20px;
+  transform: scale(0.5);
+  animation: popIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+@keyframes popIn {
+  to { transform: scale(1); }
+}
+
+/* ==========================================
+   RESPONSIVO
+   ========================================== */
+@media (max-width: 900px) {
+  .contenedor-contacto {
+    grid-template-columns: 1fr;
+  }
+  .info-contacto {
+    padding: 40px;
+  }
+  .formulario-contacto {
+    padding: 40px;
+  }
+}
+
+  </style>
+      <script src="src/components/Header-Footer/Header-Footer-main.js" defer></script>
+
+  <script>
+ function enviarMensaje(event) {
+  // Evitar que recargue la página de forma nativa
+  event.preventDefault();
+
+  // Capturar el formulario y el botón para controlar el estado de carga
+  const formulario = document.getElementById('form-premium');
+  const botonEnvio = formulario.querySelector('.btn-enviar-premium');
+  const textoBoton = formulario.querySelector('.texto-btn');
+
+  // Capturar los valores premium ingresados
+  const nombre = document.getElementById('nombre').value;
+  const email = document.getElementById('email').value;
+  const motivo = document.getElementById('motivo').value;
+  const mensaje = document.getElementById('mensaje').value;
+
+  // Deshabilitar botón para evitar múltiples clics
+  botonEnvio.disabled = true;
+  if (textoBoton) textoBoton.textContent = "Procesando...";
+
+  // Estructura de datos requerida por Formspree
+  const datosFormulario = {
+    nombre: nombre,
+    email: email,
+    motivo: motivo,
+    mensaje: mensaje
+  };
+
+  // Enviar los datos de forma asíncrona a Formspree
+  fetch(formulario.action, {
+    method: formulario.method,
+    body: JSON.stringify(datosFormulario),
+    headers: {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json'
+    }
+  })
+  .then(respuesta => {
+    if (respuesta.ok) {
+      // Transición visual premium al estado de éxito si el envío es correcto
+      const panelExito = document.getElementById('mensaje-exito');
+      
+      formulario.style.transition = "opacity 0.4s ease";
+      formulario.style.opacity = "0";
+
+      setTimeout(() => {
+        formulario.style.display = "none";
+        panelExito.classList.add('exito-visible');
+      }, 400);
+    } else {
+      // Manejo de errores por respuesta de servidor (ej. límite de envíos)
+      throw new Error('Error en el servidor de Formspree');
+    }
+  })
+  .catch(error => {
+    // Restaurar el botón si ocurre un fallo de red o servidor
+    alert("Lo sentimos, hubo un problema al procesar su solicitud de alta gama. Por favor, intente nuevamente.");
+    botonEnvio.disabled = false;
+    if (textoBoton) textoBoton.textContent = "Enviar Solicitud";
+    console.error("Error detectado:", error);
+  });
+}
+
+
+  </script>
+</body>
+</html>

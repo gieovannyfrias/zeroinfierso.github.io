@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+   <link rel="icon" href="https://zeroinfierso.gieovannyfrias.com/Imagenes/Logo.webp" type="image/x-icon">
+  <!--  canonical web-->
+  <link rel="canonical" href="https://zeroinfierso.gieovannyfrias.com"/>
+  <!-- Fuentes Editoriales de Lujo -->
+  <link rel="preconnect" href="https://googleapis.com">
+  <link rel="preconnect" href="https://gstatic.com" crossorigin>
+  <link href="https://googleapis.com/css2?family=Cinzel:wght@400;500&family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="ofertas.css">
+    <title>Ofertas</title>
+  <!-- Título que verá Google -->
+     <meta name="title" content="Ofertas"/>
+    <meta name="description" content="Encuentra todo tipo de ofertas con tan solo un clic en nuestra pagina de manera seguro."/>
+    <meta name="robots" content="index"/>
+<meta name="robots" content="follow"/>
+<meta name="keywords" content="tienda, online, productos, tecnologia, ropa"/>
+    <!-- Open Graph -->
+<meta property="og:title" content="Ofertas">
+<meta property="og:description" content="Encuentra todo tipo de ofertas con tan solo un clic en nuestra pagina de manera seguro.">
+<meta property="og:image" content="https://zeroinfierso.gieovannyfrias.com/Imagenes/Logo.webp">
+<meta property="og:url" content="https://zeroinfierso.gieovannyfrias.com/Ofertas">
+<meta property="og:type" content="article">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ofertas">
+<meta name="twitter:description" content="Encuentra todo tipo de ofertas con tan solo un clic en nuestra pagina de manera seguro.">
+<meta name="twitter:image" content="https://zeroinfierso.gieovannyfrias.com/Imagenes/Logo.webp">
+
+</head>
+<body>
+
+  <div id="content">
+  <!-- AQUÍ SE INYECTARÁ EL HEADER AUTOMÁTICAMENTE -->
+  <div id="header-premium-target"></div>
+
+  <!-- Cabecera de la Venta Privada con Contador -->
+  <header class="ofertas-hero">
+    <div class="hero-interior">
+      <span class="tag-exclusivo">Invitación Concedida</span>
+      <h1 class="titulo-ofertas">Zeroinfierso linea</h1>
+      <p class="descriptivo-ofertas">Acceso prioritario a piezas seleccionadas de temporadas anteriores con valores de cortesía por tiempo limitado.</p>
+      
+      <!-- Contador Regresivo Minimalista -->
+      <div class="contador-regresivo">
+        <div class="tiempo-bloque"><span id="horas">00</span><small>Hrs</small></div>
+        <div class="tiempo-divisor">:</div>
+        <div class="tiempo-bloque"><span id="minutos">00</span><small>Min</small></div>
+        <div class="tiempo-divisor">:</div>
+        <div class="tiempo-bloque"><span id="segundos">00</span><small>Seg</small></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Contenedor de la Vitrina de Ofertas -->
+  <main class="contenedor-ofertas">
+    
+    <!-- Bloque Extra: Desbloqueo de Código Privado -->
+    <section class="tarjeta-codigo-secreto">
+      <div class="codigo-interior">
+        <h3>Acceso al Atelier Privado</h3>
+        <p>Inicie su credencial para descubrir el código de cortesía complementario del 15% en toda la colección.</p>
+        <div class="formulario-codigo">
+          <input type="email" id="email-invitado" placeholder="Ingrese su correo de concierge">
+          <button onclick="desbloquearCodigoPremium()">Desbloquear Credencial</button>
+        </div>
+        <div id="revelador-codigo" class="codigo-oculto">
+          <p>Su código exclusivo es: <strong id="token-texto">ZER0INFIERZ0</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Grilla de Productos en Oferta -->
+    <section class="grid-ofertas">
+      
+      <!-- Tarjeta Oferta 1 -->
+      <article class="tarjeta-oferta-premium">
+        <div class="imagen-oferta-wrap">
+          <span class="badge-descuento">-30%</span>
+          <img src="https://lh3.googleusercontent.com/d/1ZKVltJP559XoWmaAtCDgkFKV_uqWAwz8=w1000" alt="Reloj en Oferta">
+          <div class="overlay-oferta">
+            <a href="/Compra?id=1" class="btn-oferta-accion">Solicitar Adquisición</a>
+          </div>
+        </div>
+        <div class="info-oferta-pieza">
+          <span class="cat-oferta">Moda Vestimenta</span>
+          <h2>Playera hombre</h2>
+          <div class="precios-bloque">
+            <span class="precio-antiguo">$250.00</span>
+            <span class="precio-actual">$150.00</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Tarjeta Oferta 2 -->
+      <article class="tarjeta-oferta-premium">
+        <div class="imagen-oferta-wrap">
+          <span class="badge-descuento">-20%</span>
+          <img src="https://lh3.googleusercontent.com/d/1ZKVltJP559XoWmaAtCDgkFKV_uqWAwz8=w1000" alt="Audífonos en Oferta">
+          <div class="overlay-oferta">
+            <a href="#" class="btn-oferta-accion">Solicitar Adquisición</a>
+          </div>
+        </div>
+        <div class="info-oferta-pieza">
+          <span class="cat-oferta">Hogar Muebles</span>
+          <h2>Mueble de zapatos</h2>
+          <div class="precios-bloque">
+            <span class="precio-antiguo">$1.150.00</span>
+            <span class="precio-actual">$850.00</span>
+          </div>
+        </div>
+      </article>
+
+    </section>
+  </main>
+
+  <!-- AQUÍ SE INYECTARÁ EL FOOTER AUTOMÁTICAMENTE -->
+  <div id="footer-premium-target"></div>
+  </div>
+<style>
+  /* ==========================================================================
+   SISTEMA DE VENTAS PRIVADAS Y OFERTAS DE ALTA GAMA
+   ========================================================================== */
+
+:root {
+  --bg-maison: #070708;
+  --superficie-luxe: #111113;
+  --oro-ley: #d4af37;
+  --oro-brillo: #f5e6a5;
+  --blanco-marfil: #f5f5f7;
+  --gris-seda: #8e8e93;
+  --borde-sutil: rgba(255, 255, 255, 0.04);
+  --fuente-editorial: 'Cinzel', serif;
+  --fuente-sistema: 'Montserrat', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-maison);
+  color: var(--blanco-marfil);
+  font-family: var(--fuente-sistema);
+  -webkit-font-smoothing: antialiased;
+  padding-top: 100px;
+        zoom:75%;
+
+}
+
+/* ==========================================
+   HERO DE OFERTAS & CONTADOR
+   ========================================== */
+.ofertas-hero {
+  padding: 80px 6% 60px 6%;
+  text-align: center;
+  border-bottom: 1px solid var(--borde-sutil);
+  background: radial-gradient(circle at center, #141416 0%, var(--bg-maison) 100%);
+}
+
+.tag-exclusivo {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: var(--oro-ley);
+  font-weight: 500;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.titulo-ofertas {
+  font-family: var(--fuente-editorial);
+  font-size: 44px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.descriptivo-ofertas {
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--gris-seda);
+  font-weight: 300;
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+}
+
+/* Reloj Regresivo */
+.contador-regresivo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.tiempo-bloque {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 70px;
+}
+
+.tiempo-bloque span {
+  font-family: var(--fuente-editorial);
+  font-size: 36px;
+  color: #fff;
+  font-weight: 400;
+}
+
+.tiempo-bloque small {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--oro-ley);
+  margin-top: 5px;
+}
+
+.tiempo-divisor {
+  font-size: 28px;
+  color: rgba(212, 175, 55, 0.4);
+  font-weight: 300;
+  padding-bottom: 20px;
+}
+
+/* ==========================================
+   LAYOUT Y FILTRO DE ACCESO PRIVADO
+   ========================================== */
+.contenedor-ofertas {
+  padding: 60px 8%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.tarjeta-codigo-secreto {
+  background: var(--superficie-luxe);
+  border: 1px solid var(--borde-sutil);
+  padding: 40px;
+  text-align: center;
+  margin-bottom: 60px;
+  position: relative;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.4);
+}
+
+.codigo-interior h3 {
+  font-family: var(--fuente-editorial);
+  font-size: 18px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+.codigo-interior p {
+  font-size: 13px;
+  color: var(--gris-seda);
+  font-weight: 300;
+  margin-bottom: 25px;
+}
+
+.formulario-codigo {
+  display: flex;
+  justify-content: center;
+  max-width: 500px;
+  margin: 0 auto;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.formulario-codigo input {
+  background: transparent;
+  border: none;
+  padding: 12px;
+  color: #fff;
+  font-family: var(--fuente-sistema);
+  font-size: 13px;
+  outline: none;
+  flex-grow: 1;
+}
+
+.formulario-codigo button {
+  background: transparent;
+  border: none;
+  color: var(--oro-ley);
+  font-family: var(--fuente-sistema);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 12px 20px;
+  transition: color 0.3s;
+}
+
+.formulario-codigo button:hover {
+  color: #fff;
+}
+
+.codigo-oculto {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  opacity: 0;
+}
+
+.codigo-oculto.revelado {
+  max-height: 80px;
+  opacity: 1;
+  margin-top: 30px;
+}
+
+.codigo-oculto strong {
+  color: var(--oro-ley);
+  letter-spacing: 3px;
+  font-size: 16px;
+  border: 1px dashed var(--oro-ley);
+  padding: 6px 15px;
+  background: rgba(212, 175, 55, 0.03);
+}
+
+/* ==========================================
+   GRILLA Y TARJETAS EDITORIALES DE PRODUCTO
+   ========================================== */
+.grid-ofertas {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 50px;
+}
+
+.tarjeta-oferta-premium {
+  background-color: var(--superficie-luxe);
+  border: 1px solid rgba(255, 255, 255, 0.01);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.imagen-oferta-wrap {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.imagen-oferta-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.badge-descuento {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #000;
+  border: 1px solid var(--oro-ley);
+  color: var(--oro-ley);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  padding: 6px 14px;
+  z-index: 10;
+  text-transform: uppercase;
+}
+
+.overlay-oferta {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(7, 7, 8, 0.5);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.btn-oferta-accion {
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+  padding: 15px 30px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  transform: translateY(20px);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Hover de Tarjeta */
+.tarjeta-oferta-premium:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 30px 60px rgba(0,0,0,0.6);
+}
+
+.tarjeta-oferta-premium:hover img {
+  transform: scale(1.04);
+}
+
+.tarjeta-oferta-premium:hover .overlay-oferta {
+  opacity: 1;
+}
+
+.tarjeta-oferta-premium:hover .btn-oferta-accion {
+  transform: translateY(0);
+}
+
+/* Textos de la tarjeta */
+.info-oferta-pieza {
+  padding: 25px;
+  text-align: center;
+}
+
+.cat-oferta {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--oro-ley);
+  display: block;
+  margin-bottom: 8px;
+}
+
+.info-oferta-pieza h2 {
+  font-family: var(--fuente-editorial);
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 12px;
+  letter-spacing: 0.5px;
+}
+
+.precios-bloque {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.precio-antiguo {
+  font-size: 14px;
+  color: var(--gris-seda);
+  text-decoration: line-through;
+  font-weight: 300;
+}
+
+.precio-actual {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+/* ==========================================
+   RESPONSIVO MÓVIL
+   ========================================== */
+@media (max-width: 900px) {
+  .titulo-ofertas { font-size: 32px; }
+  .tiempo-bloque span { font-size: 28px; }
+  .contenedor-ofertas { padding: 40px 5%; }
+  .imagen-oferta-wrap { height: 320px; }
+  .formulario-codigo { flex-direction: column; border-bottom: none; gap: 15px; }
+  .formulario-codigo input { border-bottom: 1px solid rgba(255, 255, 255, 0.15); text-align: center; }
+  .formulario-codigo button { border: 1px solid var(--oro-ley); width: 100%; text-align: center; }
+}
+
+  </style>
+      <script src="src/components/Header-Footer/Header-Footer-main.js" defer></script>
+
+  <script>
+  /* ==========================================================================
+   LOGICA INTERACTIVA - VENTAS PRIVADAS Y CONTADORES REFINADOS
+   ========================================================================== */
+
+// 1. CONFIGURACIÓN DEL CONTADOR DE TIEMPO REGRESIVO (Bucle de 24 Horas Autónomo)
+function inicializarCuentaRegresiva() {
+  // Configurar un ciclo continuo de 24 horas para demostración o fecha fija objetiva
+  let ahora = new Date();
+  let finVentaPrivada = new Date();
+  
+  // Establecer el final del conteo para el final del día de hoy
+  finVentaPrivada.setHours(23, 59, 59, 999);
+
+  function actualizarContador() {
+    let momentoActual = new Date().getTime();
+    let diferencia = finVentaPrivada.getTime() - momentoActual;
+
+    if (diferencia <= 0) {
+      document.getElementById("horas").innerText = "00";
+      document.getElementById("minutos").innerText = "00";
+      document.getElementById("segundos").innerText = "00";
+      clearInterval(intervaloReloj);
+      return;
+    }
+
+    // Cálculos de unidades financieras de tiempo
+    let horas = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    let minutos = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
+    let segundos = Math.floor((diferencia % (1000 * 60)) / 1000);
+
+    // Formatear con ceros a la izquierda si el valor es menor a 10
+    document.getElementById("horas").innerText = horas < 10 ? "0" + horas : horas;
+    document.getElementById("minutos").innerText = minutos < 10 ? "0" + minutos : minutos;
+    document.getElementById("segundos").innerText = segundos < 10 ? "0" + segundos : segundos;
+  }
+
+  actualizarContador();
+  let intervaloReloj = setInterval(actualizarContador, 1000);
+}
+
+// 2. MOTOR DE REVELACIÓN DE CREDENCIALES PRIVADAS
+function desbloquearCodigoPremium() {
+  const correoInput = document.getElementById("email-invitado");
+  const panelRevelador = document.getElementById("revelador-codigo");
+
+  if (!correoInput || !panelRevelador) return;
+
+  const valorCorreo = correoInput.value.trim();
+
+  // Validación básica sintáctica de correo electrónico
+  if (valorCorreo === "" || !valorCorreo.includes("@") || !valorCorreo.includes(".")) {
+    correoInput.style.borderColor = "#ff4444";
+    alert("Por favor, ingrese una dirección de correo válida para validar sus credenciales.");
+    return;
+  }
+
+  // Transición suave de desbloqueo mediante clases CSS
+  correoInput.style.borderColor = "rgba(255, 255, 255, 0.15)";
+  panelRevelador.classList.add("revelado");
+  
+  // Imprimir registro de acceso en consola
+  console.log(`Credenciales validadas con éxito para el usuario: ${valorCorreo}`);
+}
+
+// Arrancar procesos al terminar la renderización segura del DOM
+window.addEventListener("DOMContentLoaded", () => {
+  inicializarCuentaRegresiva();
+});
+
+  </script>
+</body>
+</html>

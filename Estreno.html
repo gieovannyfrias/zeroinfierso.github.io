@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+   <link rel="icon" href="https://zeroinfierso.gieovannyfrias.com/Imagenes/Logo.webp" type="image/x-icon">
+  <!--  canonical web-->
+  <link rel="canonical" href="https://zeroinfierso.gieovannyfrias.com"/>
+
+    <title>Estreno</title>
+  <!-- Título que verá Google -->
+     <meta name="title" content="Estreno"/>
+    <meta name="description" content="Encuentra todo tipo de estreno con tan solo un clic en nuestra pagina de manera seguro."/>
+    <meta name="robots" content="index"/>
+<meta name="robots" content="follow"/>
+<meta name="keywords" content="tienda, online, productos, tecnologia, ropa"/>
+    <!-- Open Graph -->
+<meta property="og:title" content="Estreno">
+<meta property="og:description" content="Encuentra todo tipo de estreno con tan solo un clic en nuestra pagina de manera seguro.">
+<meta property="og:image" content="https://zeroinfierso.gieovannyfrias.com/Imagenes/Logo.webp">
+<meta property="og:url" content="https://zeroinfierso.gieovannyfrias.com/Estreno">
+<meta property="og:type" content="article">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Estreno">
+<meta name="twitter:description" content="Encuentra todo tipo de estreno con tan solo un clic en nuestra pagina de manera seguro.">
+<meta name="twitter:image" content="https://zeroinfierso.gieovannyfrias.com/Imagenes/Logo.webp">
+
+</head>
+<body>
+  <div id="content">
+  <!-- AQUÍ SE INYECTARÁ EL HEADER AUTOMÁTICAMENTE -->
+  <div id="header-premium-target"></div>
+<div class="home">
+  <!-- Banner Principal -->
+  <section class="hero">
+    <h1>Colección de estreno</h1>
+    <p>Calidad exclusiva en todas nuestras categorías.</p>
+  </section>
+    </div>
+  <!-- Contenedor Principal (Grid centrado) -->
+  <main class="contenedor-tienda">
+    <section class="grid-productos" id="productos-lista"></section>
+  </main>
+      <div id="footer-premium-target"></div>
+  
+  </div>
+<style>
+  
+  /* ==========================================
+   VARIABLES PREMIUM (Paleta de lujo)
+   ========================================== */
+:root {
+  --bg-principal: #0a0a0a;       /* Negro profundo */
+  --bg-tarjeta: #121212;         /* Negro grafito */
+  --oro-premium: #d4af37;        /* Oro clásico */
+  --oro-brillante: #f3e5ab;      /* Oro claro para destaques */
+  --texto-blanco: #ffffff;
+  --texto-gris: #a0a0a0;
+  --borde-sutil: rgba(212, 175, 55, 0.15); /* Borde dorado translúcido */
+  --fuente-premium: 'Cinzel', 'Didot', 'Playfair Display', serif;
+  --fuente-interfaz: 'Montserrat', 'Helvetica Neue', sans-serif;
+}
+
+/* ==========================================
+   RESET & ESTILOS GENERALES
+   ========================================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+  body{
+      background-color: var(--bg-principal);
+      zoom:75%;
+
+  }
+.home {
+  background-color: var(--bg-principal);
+  color: var(--texto-blanco);
+  font-family: var(--fuente-interfaz);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+
+/* ==========================================
+   HERO BANNER (Diseño Tipográfico de Alta Costura)
+   ========================================== */
+.hero {
+  text-align: center;
+  padding: 120px 20px;
+  background: radial-gradient(circle at center, rgba(30, 30, 30, 0.8) 0%, var(--bg-principal) 70%), 
+              url('https://unsplash.com') center/cover;
+  background-blend-mode: multiply;
+  border-bottom: 1px solid var(--borde-sutil);
+}
+
+.hero h1 {
+  font-family: var(--fuente-premium);
+  font-size: 52px;
+  font-weight: 300;
+  letter-spacing: 6px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  background: linear-gradient(135deg, #fff 30%, var(--oro-premium) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+  color: var(--texto-gris);
+  font-size: 15px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+/* ==========================================
+   CONTENEDOR Y GRID DE PRODUCTOS
+   ========================================== */
+.contenedor-tienda {
+  padding: 80px 8%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.grid-productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 40px; /* Más espacio entre productos genera sensación de exclusividad */
+}
+
+/* ==========================================
+   TARJETAS DE PRODUCTO DE LUJO
+   ========================================== */
+.producto-card {
+  background-color: var(--bg-tarjeta);
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  overflow: hidden;
+  position: relative;
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Efecto de iluminación sutil al pasar el cursor */
+.producto-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--borde-sutil);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 0 0 20px rgba(212, 175, 55, 0.03);
+}
+
+/* Contenedor de imagen con zoom suave */
+.producto-imagen {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  filter: grayscale(15%); /* Look editorial ligeramente desaturado */
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1), filter 0.5s ease;
+}
+
+.producto-card:hover .producto-imagen {
+  transform: scale(1.04);
+  filter: grayscale(0%);
+}
+
+.producto-info {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to top, rgba(10,10,10,0.9), transparent 100%);
+}
+
+.producto-cat {
+  font-size: 11px;
+  text-transform: uppercase;
+  color: var(--oro-premium);
+  margin-bottom: 8px;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+.producto-titulo {
+  font-family: var(--fuente-premium);
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+  color: #f5f5f5;
+}
+
+.producto-precio {
+  font-size: 18px;
+  font-weight: 300;
+  color: var(--texto-blanco);
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+}
+
+/* ==========================================
+   BOTÓN PREMIUM "CONTRATISTAS" (Efecto Relleno)
+   ========================================== */
+.btn-ver {
+  background-color: transparent;
+  color: var(--oro-premium);
+  border: 1px solid var(--oro-premium);
+  padding: 15px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transition: color 0.4s ease;
+}
+
+/* Efecto de fondo dorado deslizante */
+.btn-ver::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--oro-premium);
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-ver:hover {
+  color: var(--bg-principal);
+}
+
+.btn-ver:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* ==========================================
+   RESPONSIVO
+   ========================================== */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 34px;
+  }
+  .contenedor-tienda {
+    padding: 40px 5%;
+  }
+}
+
+
+  </style>
+      <script src="src/components/Header-Footer/Header-Footer-main.js" defer></script>
+
+  <script>
+  // Base de datos de productos con enlaces de redirección personalizados
+const productos = [
+  { 
+    id: 1, 
+    titulo: "Chamara de cuero hombre", 
+    categoria: "Moda Vestimenta", 
+    precio: 899.99, 
+    imagen: "https://lh3.googleusercontent.com/d/1ZKVltJP559XoWmaAtCDgkFKV_uqWAwz8=w1000",
+    enlace: "/No_disponible" 
+  },
+  { 
+    id: 2, 
+    titulo: "Teclado hp", 
+    categoria: "Electronica Tecnologia", 
+    precio: 349.99, 
+    imagen: "https://lh3.googleusercontent.com/d/1ZKVltJP559XoWmaAtCDgkFKV_uqWAwz8=w1000",
+     enlace: "/No_disponible" 
+  },
+  { 
+    id: 3, 
+    titulo: "Alfombra de sala", 
+    categoria: "Hogar Muebles", 
+    precio: 1189.99, 
+    imagen: "https://lh3.googleusercontent.com/d/1ZKVltJP559XoWmaAtCDgkFKV_uqWAwz8=w1000",
+     enlace: "/No_disponible" 
+  },
+  { 
+    id: 4, 
+    titulo: "Crema para manos para piel seca", 
+    categoria: "Salud Belleza", 
+    precio: 120.00, 
+    imagen: "https://lh3.googleusercontent.com/d/1ZKVltJP559XoWmaAtCDgkFKV_uqWAwz8=w1000",
+    enlace: "/No_disponible" 
+  },
+  { 
+    id: 5, 
+    titulo: "Balon de futbool", 
+    categoria: "Deportes Aire Libre", 
+    precio: 159.99, 
+    imagen: "https://lh3.googleusercontent.com/d/1ZKVltJP559XoWmaAtCDgkFKV_uqWAwz8=w1000",
+   enlace: "/No_disponible" 
+  },
+  { 
+    id: 6, 
+    titulo: "Cuaderno digital", 
+    categoria: "Infoproductos Educación", 
+    precio: 1185.50, 
+    imagen: "https://lh3.googleusercontent.com/d/1ZKVltJP559XoWmaAtCDgkFKV_uqWAwz8=w1000",
+    enlace: "/No_disponible" 
+  },
+];
+
+// Generar los productos de forma dinámica en la interfaz
+function cargarProductos(lista) {
+  const contenedor = document.getElementById('productos-lista');
+  contenedor.innerHTML = '';
+
+  lista.forEach(prod => {
+    contenedor.innerHTML += `
+      <div class="producto-card">
+        <img src="${prod.imagen}" alt="${prod.titulo}" class="producto-imagen">
+        <div class="producto-info">
+          <span class="producto-cat">${prod.categoria}</span>
+          <h3 class="producto-titulo">${prod.titulo}</h3>
+<p class="producto-precio">${prod.precio.toLocaleString('es-MX', { style: 'currency', currency: 'MXN' })}</p>
+          <button class="btn-ver" onclick="irAlProducto(${prod.id})">Comprar Ahora</button>
+        </div>
+      </div>
+    `;
+  });
+}
+
+
+// Redirección dinámica según el enlace de cada producto
+function irAlProducto(id) {
+  const producto = productos.find(p => p.id === id);
+  
+  if (producto && producto.enlace) {
+    // Opción A: Abre el enlace en una pestaña nueva (Recomendado para no perder al usuario)
+    window.open(producto.enlace, '_blank');
+
+    // Opción B: Si prefieres que cargue en la misma pestaña, quita las barras '//' de abajo:
+    // window.location.href = producto.enlace;
+  }
+}
+
+// Renderizar al inicializar el sitio
+window.onload = () => {
+  cargarProductos(productos);
+};
+
+  </script>
+</body>
+</html>
