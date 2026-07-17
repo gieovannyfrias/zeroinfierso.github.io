@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+   <link rel="icon" href="https://zeroinfierso.gieovannyfrias.com/Imagenes/Logo.webp" type="image/x-icon">
+  <!--  canonical web-->
+  <link rel="canonical" href="https://zeroinfierso.gieovannyfrias.com"/>
+    <!-- 🌟 SOLUCIÓN AL SPAM: Indica a Formspree desde qué web envías los datos 🌟 -->
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    
+    <title>Reportar error</title>
+  <!-- Título que verá Google -->
+     <meta name="title" content="Reportar error"/>
+    <meta name="description" content="Si necesitas reportar el error al administrador de un sitio específico, busca un enlace de Contacto, Soporte o un correo electrónico (como mytienda@gieovannyfrias.com o contacto@gieovannyfrias.com) en la misma página."/>
+    <meta name="robots" content="index"/>
+<meta name="robots" content="follow"/>
+<meta name="keywords" content="tienda, online, productos, tecnologia, ropa"/>
+    <!-- Open Graph -->
+<meta property="og:title" content="Reportar error">
+<meta property="og:description" content="Si necesitas reportar el error al administrador de un sitio específico, busca un enlace de Contacto, Soporte o un correo electrónico (como mytienda@gieovannyfrias.com o contacto@gieovannyfrias.com) en la misma página.">
+<meta property="og:image" content="https://zeroinfierso.gieovannyfrias.com/Imagenes/Logo.webp">
+<meta property="og:url" content="https://zeroinfierso.gieovannyfrias.com/Reportar_error">
+<meta property="og:type" content="article">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Reportar error">
+<meta name="twitter:description" content="Si necesitas reportar el error al administrador de un sitio específico, busca un enlace de Contacto, Soporte o un correo electrónico (como mytienda@gieovannyfrias.com o contacto@gieovannyfrias.com) en la misma página.">
+<meta name="twitter:image" content="https://zeroinfierso.gieovannyfrias.com/Imagenes/Logo.webp">
+
+</head>
+<body>
+  <div id="content">
+  <!-- AQUÍ SE INYECTARÁ EL HEADER AUTOMÁTICAMENTE -->
+  <div id="header-premium-target"></div>
+    <div class="home">
+    <main class="report-container">
+        
+        <header class="report-header">
+            <h1>Reportar Incidencia</h1>
+            <p class="report-subtitle">Ayúdenos a perfeccionar su navegación en nuestra plataforma</p>
+        </header>
+
+        <!-- NOTA: Si creas un nuevo formulario en Formspree, cambia el ID 'xwvgljba' por el nuevo -->
+        <form class="report-form" action="https://formspree.io/f/xwvgljba" method="POST">
+            
+            <!-- Campo: Correo -->
+            <div class="form-group">
+                <label for="email">Su Correo Electrónico</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="nombre@exclusivo.com" required>
+            </div>
+
+            <!-- Campo: Área del Error -->
+            <div class="form-group">
+                <label for="area">Área Afectada</label>
+                <select id="area" name="area" class="form-control" required>
+                    <option value="" disabled selected hidden>Seleccione una sección...</option>
+                    <option value="checkout">Procesamiento de Pago (Checkout)</option>
+                    <option value="catalog">Catálogo o Ficha de Producto</option>
+                    <option value="perfil">Perfil de Usuario / Mi Cuenta</option>
+                    <option value="otro">Otro problema técnico</option>
+                </select>
+            </div>
+
+            <!-- Campo: Descripción (Usando name="message" estándar) -->
+            <div class="form-group">
+                <label for="description">Detalles de la Incidencia</label>
+                <textarea id="description" name="message" class="form-control" placeholder="Escribe un mensaje de prueba realista aquí..." required></textarea>
+            </div>
+
+            <!-- Campo trampa invisible anti-spam -->
+            <input type="text" name="_gotcha" style="display:none">
+
+            <!-- Botón de Envío -->
+            <button type="submit" class="btn-submit">Enviar Reporte Técnico</button>
+
+        </form>
+
+        <a href="/Centro_ayuda" class="report-back">Regresar al Centro de Asistencia</a>
+
+    </main>
+    </div>
+  <!-- AQUÍ SE INYECTARÁ EL FOOTER AUTOMÁTICAMENTE -->
+  <div id="footer-premium-target"></div>
+  </div>
+    <style>
+        :root {
+            --bg-main: #050505;
+            --accent-gold: #c5a880;
+            --accent-gold-hover: #e5c9a2;
+            --card-bg: rgba(20, 20, 20, 0.6);
+            --border-color: rgba(197, 168, 128, 0.15);
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --input-bg: rgba(255, 255, 255, 0.02);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+      body{
+            background-color: var(--bg-main);
+            color: var(--text-primary);
+        zoom:75%;
+      }
+        .home {
+        
+            font-family: 'Cinzel', 'Didot', 'Helvetica Neue', sans-serif;
+            min-height: 100vh;
+            padding: 5rem 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+
+        .report-container {
+            position: relative;
+            z-index: 2;
+            max-width: 600px;
+            width: 100%;
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        .report-header {
+            text-align: center;
+            margin-bottom: 3.5rem;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            font-weight: 300;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            margin-bottom: 0.8rem;
+        }
+
+        .report-subtitle {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            letter-spacing: 1px;
+            font-weight: 300;
+        }
+
+        .report-form {
+            background: var(--card-bg);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid var(--border-color);
+            padding: 3rem 2.5rem;
+            border-radius: 4px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+        }
+
+        .form-group {
+            position: relative;
+            margin-bottom: 2rem;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--accent-gold);
+            margin-bottom: 0.6rem;
+            font-weight: 500;
+        }
+
+        .form-control {
+            width: 100%;
+            background: var(--input-bg);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 2px;
+            padding: 1rem 1.2rem;
+            color: var(--text-primary);
+            font-size: 0.95rem;
+            letter-spacing: 0.5px;
+            transition: all 0.3s ease;
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--accent-gold);
+            background: rgba(255, 255, 255, 0.04);
+            box-shadow: 0 0 15px rgba(197, 168, 128, 0.05);
+        }
+
+        select.form-control {
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            cursor: pointer;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://w3.org' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%23c5a880' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 1.2rem center;
+            padding-right: 3rem;
+        }
+
+        select.form-control option {
+            background-color: #141414;
+            color: var(--text-primary);
+        }
+
+        textarea.form-control {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .btn-submit {
+            width: 100%;
+            background: var(--accent-gold);
+            color: var(--bg-main);
+            border: 1px solid var(--accent-gold);
+            padding: 1.2rem;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            border-radius: 2px;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+            margin-top: 1rem;
+        }
+
+        .btn-submit:hover {
+            background: transparent;
+            color: var(--accent-gold-hover);
+            border-color: var(--accent-gold-hover);
+            box-shadow: 0 10px 25px rgba(197, 168, 128, 0.15);
+            transform: translateY(-1px);
+        }
+
+        .report-back {
+            display: block;
+            text-align: center;
+            margin-top: 2.5rem;
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
+        }
+
+        .report-back:hover {
+            color: var(--accent-gold);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+          <script src="src/components/Header-Footer/Header-Footer-main.js" defer></script>
+
+</body>
+</html>
