@@ -278,7 +278,7 @@ text-align: center !important; align-items: center;
       
       contenedorHeader.innerHTML = `
         <header class="navbar-premium">
-          <a href="https://zeroinfierso.gieovannyfrias.com" class="nav-logo-premium">Zeroinfierso <span>Tienda</span></a>
+          <a href="https://zeroinfierso.gieovannyfrias.com" class="nav-logo-premium"><img src="https://zeroinfierso.gieovannyfrias.com/Imagenes/Logo_transparente.webp" style="width: 100px; height: 60px;">Zeroinfierso <span>Tienda</span></a>
           
           <!-- Botón de 3 líneas vertical / Hamburguesa móvil -->
           <button class="menu-toggle-premium" id="btn-menu-luxe" aria-label="Abrir Menú">
@@ -337,7 +337,7 @@ text-align: center !important; align-items: center;
         <footer class="footer-premium-maison">
           <div class="footer-grid-luxe">
             <div class="footer-col-luxe">
-              <a href="https://zeroinfierso.gieovannyfrias.com" class="nav-logo-premium">Zeroinfierso <span>Tienda</span></a>
+              <a href="https://zeroinfierso.gieovannyfrias.com" class="nav-logo-premium"><img src="https://zeroinfierso.gieovannyfrias.com/Imagenes/Logo_transparente.webp" style="width: 100px; height: 60px;">Zeroinfierso <span>Tienda</span></a>
               <p class="footer-slogan-luxe">Plataforma digital que opera como tienda multilínea, ofreciendo artículos para el hogar, moda, deportes, electrónica, videojuegos y etc en linea.</p>
             </div>
             <div class="footer-col-luxe">
